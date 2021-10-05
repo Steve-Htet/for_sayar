@@ -1,39 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
-body{
-	width: 1366px;
-	margin: 0;
+.ctn{
+	width: 100%;
+	height: auto;
 	cursor: pointer;
+
+	transform: translateX(100%);
+    animation: scroll-left 520s linear infinite;
 }
 
 .container{
 	display: flex;
 	position: absolute;
-	height: 500px;
-	overflow-x:hidden; 
+	height: 750px;	
+
 	
 
+	background: 
+	 url(../img/2021.png) 0% 55% no-repeat,
+	 url(../img/bg1.png)  20% 55% no-repeat,
+	 url(../img/bg2.png) 40% 55% no-repeat,
+	 url(../img/bg3.png) 60% 55% no-repeat,
+	 url(../img/ill.png) 80% 55% no-repeat,
+	 url(../img/bulb.gif) 100% 45% repeat-x;
+	 background-size: 300px 200px;
 
-	/*-moz-transform: translateX(100%);*/
-    /*-webkit-transform: translateX(100%);*/
-    transform: translateX(100%);
-    /*-moz-animation: scroll-left 2s linear infinite;*/
-    /*-webkit-animation: scroll-left 2s linear infinite;*/
-    animation: scroll-left 510s linear infinite;
+	 
 
 
 }
 
  @keyframes scroll-left {
             0% {
-                -moz-transform: translateX(100%);
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
+                /*-moz-transform: translateX(100%);*/
+                /*-webkit-transform: translateX(100%);*/
+                transform: translateX(50%);
             }
             100% {
-                -moz-transform: translateX(-100%);
-                -webkit-transform: translateX(-100%);
+                /*-moz-transform: translateX(-100%);*/
+                /*-webkit-transform: translateX(-100%);*/
                 transform: translateX(-100%);
             }
         }
@@ -41,7 +47,7 @@ body{
 
 
 .dq{
-	color: #22d1ee;
+	color: #404b69;
 	fill: currentColor;
 }
 
@@ -49,40 +55,29 @@ body{
 	font-family: 'Noto Serif Myanmar', serif;
 	color: #0c121c;
 	font-size: 13px;
-	width: 350px;
-	height: 350px;
-	position: relative;
+	width: 400px;
+	height: 200px;
+	float: left;
+	clear: both;
 	line-height: 22px;
 	background-color: #e2f3f5;
 	margin: 20px;
+	transform: rotate(2deg);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 2px -5px rgba(66,96,127,0.1);
 
 }
 
-/*@-moz-keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-            }
-        }*/
-        
-       /* @-webkit-keyframes scroll-left {
-            0% {
-                -webkit-transform: translateX(100%);
-            }
-            100% {
-                -webkit-transform: translateX(-100%);
-            }
-        }*/
-        
-       
+
 
 .box:hover{
-	transform: rotate(-2deg);
+	transform: rotate(0deg);
 }
 
 .rm{
+	display: block;
+	margin-top: -10px;
 	padding:5px;
 }
 
@@ -99,6 +94,7 @@ body{
 	background-color: #22d1ee;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
+	margin-top: -15px;
 }
 
 .outid p{
