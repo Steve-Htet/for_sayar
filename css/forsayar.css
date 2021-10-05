@@ -20,7 +20,7 @@ body{
     transform: translateX(100%);
     /*-moz-animation: scroll-left 2s linear infinite;*/
     /*-webkit-animation: scroll-left 2s linear infinite;*/
-    animation: scroll-left 60s linear infinite;
+    animation: scroll-left 510s linear infinite;
 
 
 }
@@ -50,7 +50,7 @@ body{
 	color: #0c121c;
 	font-size: 13px;
 	width: 350px;
-	height: 300px;
+	height: 350px;
 	position: relative;
 	line-height: 22px;
 	background-color: #e2f3f5;
